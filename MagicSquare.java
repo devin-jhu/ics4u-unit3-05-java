@@ -1,7 +1,7 @@
 /*
 * The magic square program.
 *
-* @author  Peter Gemmell
+* @author  Devin Jhu
 * @version 1.0
 * @since   2022-11-18
 */
@@ -136,7 +136,7 @@ final class MagicSquare {
         return rows && col1 == MAGICNUMBER && col2 == MAGICNUMBER
                 && col3 == MAGICNUMBER && diag1 == MAGICNUMBER
 		&& diag2 == MAGICNUMBER
-		&& findDuplicates(preSquare).size() == 0;
+		&& findDuplicates(theSquare).size() == 0;
     }
 
     /**
@@ -149,7 +149,7 @@ final class MagicSquare {
         final String space = " ";
 
         System.out.println('\n');
-        for (int count = 0; counter < outputSquare.length; counter++) {
+        for (int counter = 0; counter < outputSquare.length; counter++) {
             if (counter == THREE || counter == SIX) {
                 System.out.println();
                 System.out.print(outputSquare[counter] + space);
